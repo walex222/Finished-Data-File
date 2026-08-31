@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Akinwale Simeons — Strategic Business Advisory</title>
+<meta name="description" content="Akinwale Simeons is a strategic advisory practice helping ambitious businesses turn complexity into an executable plan — strategy, operations, market entry, and change leadership." />
+<meta name="theme-color" content="#14171A" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Akinwale Simeons — Strategic Business Advisory" />
+<meta property="og:description" content="Clarity turns complexity into a plan you can execute. Strategy, operations, and growth advisory for ambitious businesses." />
+<meta property="og:type" content="website" />
+<link rel="canonical" href="https://www.akinwalesimeons.com/" />
+<meta name="robots" content="index, follow" />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' fill='%2314171A'/%3E%3Ccircle cx='12' cy='12' r='4' fill='%23C1541C'/%3E%3C/svg%3E" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Akinwale Simeons",
+  "description": "Strategic business advisory — strategy, operations, market entry, and change leadership for growing businesses.",
+  "url": "https://www.akinwalesimeons.com/",
+  "email": "hello@akinwalesimeons.com",
+  "telephone": "+2348031521377",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "7 Oshodi Street, Olodi Apapa",
+    "addressLocality": "Lagos",
+    "addressCountry": "NG"
+  },
+  "areaServed": "Worldwide",
+  "priceRange": "$$$"
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!--
+  PRODUCTION NOTE: this uses the Tailwind CDN build for portability in a single file.
+  Before launch, compile Tailwind with the CLI (`npx tailwindcss -i input.css -o output.css --minify`)
+  and swap this <script> for a linked, purged <link rel="stylesheet"> — smaller payload, no
+  in-browser compilation, better Core Web Vitals.
+-->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: '#14171A',
+          slate: '#52585E',
+          mist: '#F1F2F4',
+          blue: { DEFAULT: '#1B3A5C', dark: '#122A44' },
+          rust: { DEFAULT: '#C1541C', dark: '#9E4416' },
+        },
+        fontFamily: {
+          serif: ['"Instrument Serif"', 'Georgia', 'serif'],
+          sans: ['Inter', 'system-ui', 'sans-serif'],
+        },
+      }
+    }
+  }
+</script>
+
+<style>
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
+  }
+  body { font-feature-settings: "liga" 1, "kern" 1; }
+
+  .hero-reveal > * { opacity: 0; transform: translateY(14px); animation: reveal 0.7s cubic-bezier(.2,.7,.2,1) forwards; }
+  .hero-reveal > *:nth-child(1) { animation-delay: .05s; }
+  .hero-reveal > *:nth-child(2) { animation-delay: .15s; }
+  .hero-reveal > *:nth-child(3) { animation-delay: .25s; }
+  .hero-reveal > *:nth-child(4) { animation-delay: .35s; }
+  @keyframes reveal { to { opacity: 1; transform: translateY(0); } }
+
+  a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, summary:focus-visible {
+    outline: 2px solid #C1541C; outline-offset: 3px; border-radius: 2px;
+  }
+
+  .grid-lines {
+    background-image:
+      linear-gradient(to right, rgba(27,58,92,0.14) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(27,58,92,0.14) 1px, transparent 1px);
+    background-size: 34px 34px;
+  }
+
+  .faq-toggle[open] summary .chev { transform: rotate(45deg); }
+  .chev { transition: transform .25s ease; }
+
+  .nav-link { position: relative; }
+  .nav-link::after {
+    content: ''; position: absolute; left: 0; bottom: -4px; height: 1px; width: 0;
+    background: #C1541C; transition: width .25s ease;
+  }
+  .nav-link:hover::after { width: 100%; }
+</style>
+</head>
+
+<body class="bg-white text-ink font-sans antialiased">
+
+<!-- Skip link -->
+<a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:bg-ink focus:text-white focus:px-4 focus:py-2 focus:rounded">Skip to content</a>
+
+<!-- HEADER -->
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-ink/10">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex items-center justify-between h-20">
+      <a href="#top" class="flex items-center gap-2.5">
+        <span class="w-2.5 h-2.5 bg-rust rounded-full"></span>
+        <span class="font-semibold tracking-tight text-lg">Akinwale Simeons</span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-9 text-[15px] text-slate">
+        <a href="#services" class="nav-link hover:text-ink transition-colors">Services</a>
+        <a href="#approach" class="nav-link hover:text-ink transition-colors">How we work</a>
+        <a href="#why" class="nav-link hover:text-ink transition-colors">Why us</a>
+        <a href="#about" class="nav-link hover:text-ink transition-colors">About</a>
+        <a href="#faq" class="nav-link hover:text-ink transition-colors">FAQ</a>
+        <a href="#contact" class="nav-link hover:text-ink transition-colors">Contact</a>
+      </nav>
+
+      <a href="#contact" class="hidden md:inline-flex items-center bg-blue hover:bg-blue-dark text-white text-[15px] font-medium px-5 py-2.5 rounded-sm transition-colors">
+        Book a consultation
+      </a>
+
+      <button id="menuBtn" aria-expanded="false" aria-controls="mobileNav" class="md:hidden p-2 -mr-2" aria-label="Open menu">
+        <svg id="menuIconOpen" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        <svg id="menuIconClose" class="hidden" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobileNav" class="hidden md:hidden border-t border-ink/10 bg-white">
+    <nav class="max-w-7xl mx-auto px-6 py-4 flex flex-col gap-4 text-slate text-[15px]">
+      <a href="#services" class="mobile-link py-1">Services</a>
+      <a href="#approach" class="mobile-link py-1">How we work</a>
+      <a href="#why" class="mobile-link py-1">Why us</a>
+      <a href="#about" class="mobile-link py-1">About</a>
+      <a href="#faq" class="mobile-link py-1">FAQ</a>
+      <a href="#contact" class="mobile-link py-1 text-ink font-medium">Book a consultation</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section id="top" class="relative overflow-hidden bg-mist">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center py-20 md:py-28">
+
+      <div class="hero-reveal">
+        <p class="text-slate text-sm mb-5">Business &amp; strategy advisory</p>
+        <h1 class="font-serif text-[2.75rem] leading-[1.08] sm:text-6xl sm:leading-[1.05] mb-6">
+          Clarity turns complexity into a plan you can execute.
+        </h1>
+        <p class="text-slate text-lg leading-relaxed max-w-md mb-9">
+          We work alongside founders and leadership teams to diagnose what's actually holding growth back, then design and help deploy the plan to fix it.
+        </p>
+        <div class="flex flex-wrap items-center gap-4">
+          <a href="#contact" class="inline-flex items-center bg-rust hover:bg-rust-dark text-white font-medium px-6 py-3.5 rounded-sm transition-colors">
+            Book a consultation
+          </a>
+          <a href="#approach" class="inline-flex items-center text-ink font-medium px-2 py-3.5 border-b border-ink/30 hover:border-ink transition-colors">
+            See how we work
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-reveal relative">
+        <div class="relative aspect-[4/3] rounded-sm grid-lines bg-white border border-blue/15 overflow-hidden">
+          <svg viewBox="0 0 400 300" class="absolute inset-0 w-full h-full" aria-hidden="true">
+            <path d="M40 240 C 100 250, 140 160, 200 150 S 300 90, 360 60" fill="none" stroke="#1B3A5C" stroke-width="2" stroke-dasharray="5 6" opacity="0.55"/>
+            <circle cx="40" cy="240" r="5" fill="#1B3A5C"/>
+            <g transform="translate(348,42)">
+              <path d="M12 0C5.4 0 0 5.4 0 12c0 9 12 22 12 22s12-13 12-22c0-6.6-5.4-12-12-12z" fill="#C1541C"/>
+              <circle cx="12" cy="12" r="4.5" fill="white"/>
+            </g>
+          </svg>
+          <div class="absolute bottom-5 left-5 bg-white/95 border border-ink/10 px-4 py-3 rounded-sm shadow-sm max-w-[220px]">
+            <p class="text-xs text-slate leading-snug">Every engagement starts by mapping where you are — and plotting the shortest credible path to where you need to be.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-24 md:py-28">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="max-w-xl mb-16">
+        <h2 class="font-serif text-4xl sm:text-5xl leading-tight mb-4">What we help you get right</h2>
+        <p class="text-slate text-lg leading-relaxed">Four areas where a clear outside perspective changes the trajectory of a business.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-px bg-ink/10 border border-ink/10">
+        <!-- Service 1 -->
+        <div class="bg-white p-8 md:p-10">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#1B3A5C" stroke-width="1.6" class="mb-6"><path d="M3 3v18h18"/><path d="M7 15l4-5 4 3 5-7"/></svg>
+          <h3 class="font-serif text-2xl mb-3">Strategy &amp; growth planning</h3>
+          <p class="text-slate leading-relaxed">A clear-eyed view of your market position, and a growth plan built on where you can realistically win — not a generic playbook.</p>
+        </div>
+        <!-- Service 2 -->
+        <div class="bg-white p-8 md:p-10">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#1B3A5C" stroke-width="1.6" class="mb-6"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+          <h3 class="font-serif text-2xl mb-3">Operations &amp; process design</h3>
+          <p class="text-slate leading-relaxed">We find where work is getting stuck — handoffs, decisions, systems — and redesign it so the business can scale without breaking.</p>
+        </div>
+        <!-- Service 3 -->
+        <div class="bg-white p-8 md:p-10">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#1B3A5C" stroke-width="1.6" class="mb-6"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 000 18"/></svg>
+          <h3 class="font-serif text-2xl mb-3">Market entry &amp; expansion</h3>
+          <p class="text-slate leading-relaxed">Entering a new market or segment is a series of specific decisions. We help you make them with real evidence, not assumptions.</p>
+        </div>
+        <!-- Service 4 -->
+        <div class="bg-white p-8 md:p-10">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#1B3A5C" stroke-width="1.6" class="mb-6"><path d="M12 2l3 6 6 1-4.5 4 1 6-5.5-3-5.5 3 1-6L3 9l6-1z"/></svg>
+          <h3 class="font-serif text-2xl mb-3">Leadership &amp; change advisory</h3>
+          <p class="text-slate leading-relaxed">Structural change succeeds or fails on leadership alignment. We work directly with your leadership team through the transition.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPROACH -->
+  <section id="approach" class="py-24 md:py-28 bg-ink text-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="max-w-xl mb-16">
+        <h2 class="font-serif text-4xl sm:text-5xl leading-tight mb-4">How an engagement runs</h2>
+        <p class="text-white/70 text-lg leading-relaxed">Four stages, always in this order. Nothing gets designed before it's been diagnosed.</p>
+      </div>
+
+      <div class="grid md:grid-cols-4 gap-10">
+        <div>
+          <span class="font-serif text-3xl text-rust">01</span>
+          <h3 class="text-lg font-medium mt-4 mb-2">Diagnose</h3>
+          <p class="text-white/65 leading-relaxed text-[15px]">We spend time inside the business — data, conversations, operations — to find the real constraint, not the assumed one.</p>
+        </div>
+        <div>
+          <span class="font-serif text-3xl text-rust">02</span>
+          <h3 class="text-lg font-medium mt-4 mb-2">Design</h3>
+          <p class="text-white/65 leading-relaxed text-[15px]">We build a specific plan against that constraint, with clear priorities, owners, and a realistic timeline.</p>
+        </div>
+        <div>
+          <span class="font-serif text-3xl text-rust">03</span>
+          <h3 class="text-lg font-medium mt-4 mb-2">Deploy</h3>
+          <p class="text-white/65 leading-relaxed text-[15px]">We stay embedded through implementation — this is where most plans quietly fail, so we don't leave at the handoff.</p>
+        </div>
+        <div>
+          <span class="font-serif text-3xl text-rust">04</span>
+          <h3 class="text-lg font-medium mt-4 mb-2">Deliver</h3>
+          <p class="text-white/65 leading-relaxed text-[15px]">We review outcomes against the original goals and hand over a plan your team can run without us.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section id="why" class="py-24 md:py-28">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-16 items-start">
+        <div>
+          <h2 class="font-serif text-4xl sm:text-5xl leading-tight mb-6">Why leadership teams work with us</h2>
+          <p class="text-slate text-lg leading-relaxed mb-8">Most advisory relationships stop at the recommendation. Ours doesn't.</p>
+          <a href="#contact" class="inline-flex items-center text-ink font-medium border-b border-ink/30 hover:border-ink transition-colors">
+            Talk to us about your business
+          </a>
+        </div>
+
+        <div class="flex flex-col divide-y divide-ink/10 border-t border-ink/10">
+          <div class="py-6 flex gap-5">
+            <span class="w-1.5 h-1.5 mt-2.5 rounded-full bg-rust flex-shrink-0"></span>
+            <div>
+              <h3 class="font-medium text-lg mb-1.5">We stay through implementation</h3>
+              <p class="text-slate leading-relaxed">A plan is only worth what it delivers. We work alongside your team until it's running, not just until it's written.</p>
+            </div>
+          </div>
+          <div class="py-6 flex gap-5">
+            <span class="w-1.5 h-1.5 mt-2.5 rounded-full bg-rust flex-shrink-0"></span>
+            <div>
+              <h3 class="font-medium text-lg mb-1.5">Small, senior teams</h3>
+              <p class="text-slate leading-relaxed">You work directly with the people making the recommendations — not a rotating bench of junior analysts.</p>
+            </div>
+          </div>
+          <div class="py-6 flex gap-5">
+            <span class="w-1.5 h-1.5 mt-2.5 rounded-full bg-rust flex-shrink-0"></span>
+            <div>
+              <h3 class="font-medium text-lg mb-1.5">Built for your actual constraints</h3>
+              <p class="text-slate leading-relaxed">No templated frameworks. Every recommendation is built around your team, your market, and your resources.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT / FOUNDER -->
+  <section id="about" class="py-24 md:py-28 bg-mist">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
+      <div class="order-2 md:order-1">
+        <p class="text-slate text-sm mb-4">About</p>
+        <h2 class="font-serif text-4xl sm:text-5xl leading-tight mb-6">Akinwale Simeons</h2>
+        <p class="text-slate text-lg leading-relaxed mb-4">
+          Founder-led advisory, built on the belief that most businesses don't need a bigger strategy deck — they need someone to sit inside the problem with them until it's actually solved.
+        </p>
+        <p class="text-slate text-lg leading-relaxed">
+          Every engagement is led personally, from the first diagnostic conversation through to implementation.
+        </p>
+      </div>
+      <div class="order-1 md:order-2">
+        <div class="aspect-[4/5] w-full max-w-sm mx-auto md:mx-0 rounded-sm overflow-hidden border border-ink/10">
+          <img src="about-visual.jpg" alt="Abstract cosmic illustration representing Akinwale Simeons' brand" class="w-full h-full object-cover" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-24 md:py-28">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="font-serif text-4xl sm:text-5xl leading-tight mb-12">Common questions</h2>
+
+      <div class="divide-y divide-ink/10 border-t border-b border-ink/10">
+        <details class="faq-toggle group py-6">
+          <summary class="flex items-center justify-between cursor-pointer list-none">
+            <span class="font-medium text-lg pr-6">How long does a typical engagement run?</span>
+            <svg class="chev flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg>
+          </summary>
+          <p class="text-slate leading-relaxed mt-4 pr-8">It depends on scope. A focused diagnostic can take a few weeks; a full strategy-through-implementation engagement typically runs three to six months.</p>
+        </details>
+
+        <details class="faq-toggle group py-6">
+          <summary class="flex items-center justify-between cursor-pointer list-none">
+            <span class="font-medium text-lg pr-6">What size of business do you work with?</span>
+            <svg class="chev flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg>
+          </summary>
+          <p class="text-slate leading-relaxed mt-4 pr-8">We work with growing, founder-led businesses through to established mid-size companies. What matters most is that leadership is ready to act on what we find.</p>
+        </details>
+
+        <details class="faq-toggle group py-6">
+          <summary class="flex items-center justify-between cursor-pointer list-none">
+            <span class="font-medium text-lg pr-6">Do you work with businesses remotely?</span>
+            <svg class="chev flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg>
+          </summary>
+          <p class="text-slate leading-relaxed mt-4 pr-8">Yes — engagements are run in person where useful and remotely otherwise. Get in touch and we'll confirm fit for your location.</p>
+        </details>
+
+        <details class="faq-toggle group py-6">
+          <summary class="flex items-center justify-between cursor-pointer list-none">
+            <span class="font-medium text-lg pr-6">How is an engagement priced?</span>
+            <svg class="chev flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg>
+          </summary>
+          <p class="text-slate leading-relaxed mt-4 pr-8">Fixed fee per phase, agreed upfront after the initial consultation, based on scope — not hourly billing.</p>
+        </details>
+
+        <details class="faq-toggle group py-6">
+          <summary class="flex items-center justify-between cursor-pointer list-none">
+            <span class="font-medium text-lg pr-6">What happens in the first consultation?</span>
+            <svg class="chev flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg>
+          </summary>
+          <p class="text-slate leading-relaxed mt-4 pr-8">A 30-minute call to understand your business and where things stand. We'll tell you honestly whether we think we can help.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="bg-blue text-white">
+    <div class="max-w-7xl mx-auto px-6 py-20 md:py-24 grid md:grid-cols-2 gap-8 items-center">
+      <h2 class="font-serif text-3xl sm:text-4xl leading-tight">
+        Let's find out if we're the right fit for where you're headed.
+      </h2>
+      <div class="md:justify-self-end">
+        <a href="#contact" class="inline-flex items-center bg-rust hover:bg-rust-dark text-white font-medium px-7 py-4 rounded-sm transition-colors">
+          Book a consultation
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-24 md:py-28">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16">
+      <div>
+        <h2 class="font-serif text-4xl sm:text-5xl leading-tight mb-6">Start a conversation</h2>
+        <p class="text-slate text-lg leading-relaxed mb-8 max-w-md">Tell us briefly about your business. We reply personally within one business day.</p>
+
+        <dl class="space-y-4 text-[15px]">
+          <div class="flex gap-3">
+            <dt class="text-slate w-20 flex-shrink-0">Email</dt>
+            <dd><a href="mailto:hello@akinwalesimeons.com" class="hover:text-rust transition-colors">hello@akinwalesimeons.com</a></dd>
+          </div>
+          <div class="flex gap-3">
+            <dt class="text-slate w-20 flex-shrink-0">Phone</dt>
+            <dd><a href="tel:+2348031521377" class="hover:text-rust transition-colors">+234 803 152 1377</a></dd>
+          </div>
+          <div class="flex gap-3">
+            <dt class="text-slate w-20 flex-shrink-0">Office</dt>
+            <dd>7 Oshodi Street, Olodi Apapa, Lagos</dd>
+          </div>
+        </dl>
+      </div>
+
+      <form id="contactForm" class="space-y-5" novalidate>
+        <div id="formSuccess" class="hidden bg-mist border border-blue/20 text-ink px-5 py-4 rounded-sm text-sm" role="status"></div>
+
+        <div>
+          <label for="name" class="block text-sm font-medium mb-2">Full name</label>
+          <input id="name" name="name" type="text" required
+            class="w-full border border-ink/20 rounded-sm px-4 py-3 text-[15px] focus:outline-none focus:border-blue" />
+          <p class="error-msg hidden text-rust text-xs mt-1.5"></p>
+        </div>
+
+        <div>
+          <label for="email" class="block text-sm font-medium mb-2">Work email</label>
+          <input id="email" name="email" type="email" required
+            class="w-full border border-ink/20 rounded-sm px-4 py-3 text-[15px] focus:outline-none focus:border-blue" />
+          <p class="error-msg hidden text-rust text-xs mt-1.5"></p>
+        </div>
+
+        <div>
+          <label for="company" class="block text-sm font-medium mb-2">Company</label>
+          <input id="company" name="company" type="text"
+            class="w-full border border-ink/20 rounded-sm px-4 py-3 text-[15px] focus:outline-none focus:border-blue" />
+        </div>
+
+        <div>
+          <label for="message" class="block text-sm font-medium mb-2">What are you working through?</label>
+          <textarea id="message" name="message" rows="4" required
+            class="w-full border border-ink/20 rounded-sm px-4 py-3 text-[15px] focus:outline-none focus:border-blue"></textarea>
+          <p class="error-msg hidden text-rust text-xs mt-1.5"></p>
+        </div>
+
+        <button type="submit" class="w-full sm:w-auto inline-flex items-center justify-center bg-ink hover:bg-black text-white font-medium px-7 py-3.5 rounded-sm transition-colors">
+          Send message
+        </button>
+        <p class="text-xs text-slate">
+          Sending opens your email client with this message pre-filled. Want submissions to go straight to an inbox or CRM instead? Connect a form service or your own backend here.
+        </p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="border-t border-ink/10">
+  <div class="max-w-7xl mx-auto px-6 py-14 grid sm:grid-cols-2 md:grid-cols-4 gap-10">
+    <div class="md:col-span-1">
+      <div class="flex items-center gap-2.5 mb-3">
+        <span class="w-2 h-2 bg-rust rounded-full"></span>
+        <span class="font-semibold">Akinwale Simeons</span>
+      </div>
+      <p class="text-slate text-sm leading-relaxed">Strategic advisory for businesses ready to act on what they find.</p>
+    </div>
+
+    <div>
+      <h3 class="text-sm font-medium mb-4">Navigate</h3>
+      <ul class="space-y-2.5 text-sm text-slate">
+        <li><a href="#services" class="hover:text-ink transition-colors">Services</a></li>
+        <li><a href="#approach" class="hover:text-ink transition-colors">How we work</a></li>
+        <li><a href="#why" class="hover:text-ink transition-colors">Why us</a></li>
+        <li><a href="#faq" class="hover:text-ink transition-colors">FAQ</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-sm font-medium mb-4">Company</h3>
+      <ul class="space-y-2.5 text-sm text-slate">
+        <li><a href="#contact" class="hover:text-ink transition-colors">Contact</a></li>
+        <li><a href="#about" class="hover:text-ink transition-colors">About</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-sm font-medium mb-4">Contact</h3>
+      <ul class="space-y-2.5 text-sm text-slate">
+        <li><a href="mailto:hello@akinwalesimeons.com" class="hover:text-ink transition-colors">hello@akinwalesimeons.com</a></li>
+        <li><a href="tel:+2348031521377" class="hover:text-ink transition-colors">+234 803 152 1377</a></li>
+        <li>7 Oshodi Street, Olodi Apapa, Lagos</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="border-t border-ink/10">
+    <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-slate">
+      <p>© 2026 Akinwale Simeons. All rights reserved.</p>
+      <p>Site built for a professional advisory practice.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Mobile nav toggle
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileNav = document.getElementById('mobileNav');
+  const iconOpen = document.getElementById('menuIconOpen');
+  const iconClose = document.getElementById('menuIconClose');
+
+  menuBtn.addEventListener('click', () => {
+    const isOpen = mobileNav.classList.toggle('hidden') === false;
+    menuBtn.setAttribute('aria-expanded', String(isOpen));
+    iconOpen.classList.toggle('hidden', isOpen);
+    iconClose.classList.toggle('hidden', !isOpen);
+  });
+
+  document.querySelectorAll('.mobile-link').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileNav.classList.add('hidden');
+      menuBtn.setAttribute('aria-expanded', 'false');
+      iconOpen.classList.remove('hidden');
+      iconClose.classList.add('hidden');
+    });
+  });
+
+  // Close other open FAQ items when one opens (accordion behaviour)
+  const faqItems = document.querySelectorAll('.faq-toggle');
+  faqItems.forEach(item => {
+    item.addEventListener('toggle', () => {
+      if (item.open) {
+        faqItems.forEach(other => { if (other !== item) other.open = false; });
+      }
+    });
+  });
+
+  // Contact form validation + placeholder submit
+  const form = document.getElementById('contactForm');
+  const successBox = document.getElementById('formSuccess');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    let valid = true;
+
+    const fields = [
+      { id: 'name', message: 'Please enter your name.' },
+      { id: 'email', message: 'Please enter a valid work email.', isEmail: true },
+      { id: 'message', message: 'Let us know briefly what you\'re working through.' },
+    ];
+
+    fields.forEach(f => {
+      const input = document.getElementById(f.id);
+      const errorEl = input.parentElement.querySelector('.error-msg');
+      const value = input.value.trim();
+      const emailOk = f.isEmail ? /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value) : true;
+
+      if (!value || !emailOk) {
+        valid = false;
+        errorEl.textContent = f.message;
+        errorEl.classList.remove('hidden');
+        input.classList.add('border-rust');
+      } else {
+        errorEl.classList.add('hidden');
+        input.classList.remove('border-rust');
+      }
+    });
+
+    if (!valid) return;
+
+    // FUNCTIONAL FALLBACK: opens the visitor's email client with the message
+    // pre-filled, so the form works with zero backend setup. Once you have a
+    // form service or API (e.g. Formspree, or your own /api/contact endpoint),
+    // replace this block with:
+    //   await fetch('/api/contact', { method: 'POST', body: new FormData(form) })
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const company = document.getElementById('company').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    const subject = `New enquiry from ${name}${company ? ' at ' + company : ''}`;
+    const body = `Name: ${name}\nEmail: ${email}\nCompany: ${company || '—'}\n\nMessage:\n${message}`;
+    const mailtoLink = `mailto:hello@akinwalesimeons.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    window.location.href = mailtoLink;
+
+    successBox.textContent = 'Opening your email client to send this to us. If nothing opens, email hello@akinwalesimeons.com directly.';
+    successBox.classList.remove('hidden');
+    form.reset();
+  });
+</script>
+
+</body>
+</html>
